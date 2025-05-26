@@ -7,9 +7,6 @@ import Client from "../parts/Client";
 import Sitemap from "../parts/Sitemap";
 import Footer from "../parts/Footer";
 
-
-
-
 function HomePage() {
   return (  
     <>
