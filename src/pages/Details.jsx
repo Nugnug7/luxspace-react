@@ -4,6 +4,7 @@ import Breadcrumb from "../components/Breadcrumb/index";
 
 // import BrowseRoom from "../parts/HomePage/BrowseRoom";
 // import JustArrived from "../parts/HomePage/JustArrived";
+import ProductDetail from "../parts/Details/ProductDetail";
 import Client from "../parts/Client";
 import Sitemap from "../parts/Sitemap";
 import Footer from "../parts/Footer";
@@ -18,7 +19,7 @@ function Details() {
             {url: "/categories/91231/products/7888", name: "Details"},     
         ]} 
         /> 
-
+        <ProductDetail />
         <Client /> 
         <Sitemap /> 
         <Footer />     
