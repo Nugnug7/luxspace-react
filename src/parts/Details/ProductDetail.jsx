@@ -13,12 +13,12 @@ export default function ProductDetail() {
                             <div className="thumbnails flex flex-col space-y-4 overflow-y-auto max-h-[500px] w-60">
                                 <div className="px-2">
                                     <div
-                                    className="item selected"
-                                    data-img="/images/contents/showcase-1.front.jpg">
-                                    <img
-                                        src="/images/contents/showcase-1.front.jpg"
-                                        alt="front"
-                                        className="object-cover w-full h-full rounded-lg"/>
+                                        className="item selected"
+                                        data-img="/images/contents/showcase-1.front.jpg">
+                                        <img
+                                            src="/images/contents/showcase-1.front.jpg"
+                                            alt="front"
+                                            className="object-cover w-full h-full rounded-lg"/>
                                     </div>
                                 </div>
                                 <div className="px-2">
