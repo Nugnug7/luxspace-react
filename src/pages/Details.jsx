@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../parts/Header" ;
-import Breadcrumb from "../components/Breadcrumb/index"; 
+import Breadcrumb from "../components/Breadcrumb"; 
 
 // import BrowseRoom from "../parts/HomePage/BrowseRoom";
 // import JustArrived from "../parts/HomePage/JustArrived";
@@ -20,7 +20,7 @@ function Details() {
         ]} 
         /> 
         <ProductDetail />
-        <Client /> 
+        <Client />    
         <Sitemap /> 
         <Footer />     
     </>
