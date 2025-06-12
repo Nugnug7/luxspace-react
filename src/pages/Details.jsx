@@ -21,8 +21,7 @@ function Details() {
         ]} 
         /> 
         <ProductDetail />
-        <Suggestion />
-        <Client />    
+        <Suggestion />    
         <Sitemap /> 
         <Footer />     
     </>
