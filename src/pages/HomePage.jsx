@@ -1,4 +1,4 @@
-import React from "react"
+import React, { use } from "react"
 import Header from "../parts/Header";
 import Hero from "../parts/HomePage/Hero";
 import BrowseRoom from "../parts/HomePage/BrowseRoom";
@@ -8,9 +8,12 @@ import Sitemap from "../parts/Sitemap";
 import Footer from "../parts/Footer";
 
 import useScrollAnchor from "../helpers/hooks/useScrollAnchor";
+import useModalDom from "../helpers/hooks/useModalDOM";
 
 function HomePage() {
   useScrollAnchor();
+  useModalDom();
+  // This is a workaround to ensure the modal DOM is set up correctly
 
   return (   
     <>
