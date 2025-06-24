@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Header(theme, position) {
   return (
-    <header className={[position," w-full z-50 px-4 top-0"]} >
+    <header className={[position," w-auto z-20 px-4 top-0"]} >
       <div className="container mx-auto py-5">
         <div className="flex flex-stretch items-center">
           <div className="w-56 items-center flex">
@@ -12,10 +12,9 @@ export default function Header(theme, position) {
             </Link>
           </div>
           <div className="w-full"></div>
-
+ 
           <div className="w-auto">
-            <ul
-              className="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex md:items-center"
+            <ul className="absolute md:relative inset-0 md:inset-auto bg-white md:bg-transparent flex flex-col md:flex-row items-center justify-center invisible md:visible opacity-0 md:opacity-100 z-100"
               id="menu">
               <li className="mx-3 py-6 md:py-0">
                 <Link to="/showcase" className={["hover:underline", theme === "white" ? "text-black md:text-white ": "text-white md:text-black "].join(" ")}>

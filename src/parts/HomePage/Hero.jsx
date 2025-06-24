@@ -24,21 +24,21 @@ export default function Header() {
           </div>
       </div>
       {/* content right */}
-      <div className="w-full h-full z-10 md:relative md:w-1/2">
+      <div className="inset-0 top-0 z-10 md:relative">
         <div className="relate hero-image"> 
-          {/* Gambar Hero */}
+          {/* Gambar Hero */} 
           <img
             src="/images/contents/image-section-1.png"
             alt="hero 1" 
-            className="absolute inset-0 top-0 md:relative w-full h-auto object-cover object-center"
+            className="absolute inset-0 top-0 md:relative w-full h-auto object-cover object-center z-10"
           />
         </div>
 
         {/* Tombol Play */}
-          <div className="absolute inset-0 flex items-center justify-center z-30">
+          <div className="absolute inset-0 flex items-center justify-center z-20">
             <button
               onClick={() => setShowModal(true)}
-              className="w-16 h-16 bg-white bg-opacity-70 rounded-full flex items-center justify-center hover:bg-opacity-90 transition"
+              className="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-90 transition"
             >
               <svg
                 className="w-6 h-6 text-blue-500"
@@ -53,10 +53,10 @@ export default function Header() {
       
       {/* Modal Video */}
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center">
-          <div className="relative w-full max-w-4xl aspect-video">
+        <div className="fixed inset-0 bg-black bg-opacity-75 z-20 flex items-center justify-center">
+          <div class="relative w-600 max-w-4xl aspect-video">
             <iframe
-              className="fix top-0 left-0 w-full h-full"
+              class="fix top-0 left-0 w-full h-full"
               src="https://www.youtube.com/embed/3h0_v1cdUIA"
               title="YouTube video"
               frameBorder="0"
@@ -65,7 +65,7 @@ export default function Header() {
             ></iframe>
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-2 right-2 text-white text-3xl"
+              class="absolute top-2 right-2 text-white text-3xl"
             >
               &times;
             </button>

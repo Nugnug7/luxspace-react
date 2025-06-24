@@ -18,7 +18,7 @@ function useModalDom() {
           addClass(modalOverlay, modalWrapperClassNames);
           const modalContent = document.createElement("div");
 
-          modalContent.innerHTML = e.attributes?.["data-content"].value;
+          modalContent.innerHTML = element.target.attributes?.["data-content"].value;
           addClass(modalContent, "bg-white p-0 md:p-6 z-10");
           modalWrapper.append(modalOverlay);
           modalWrapper.append(modalContent);

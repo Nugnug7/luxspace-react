@@ -1,11 +1,33 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import useAsync from '../../helpers/hooks/useAsync' 
 
 export default function BrowseRoom() {
+    const {data, status, error, run} = useAsync({ data: {username: ""}}) 
+
+    useEffect(() => {
+        run(fetch('https://bff9e22a-cedb-4e4e-8186-223ad4cf9613.mock.pstmn.io/api/products/?page=1&limit=10')       
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => data)
+            .catch(error => {
+                throw new Error(JSON.stringify({ message: error.message }));
+            })
+        );  
+    }, [run])
+    
+
+
+    console.log(data, status, error)
+
   return (
     <section className="flex bg-gray-100 py-16 px-4" id="browse-the-room">
       <div className="container mx-auto">
             <div className="flex flex-start mb-4">
-                <h3 className="text-2xl capitalize font-semibold">
+                <h3 className="text-2xl capitalize font-semibold"> 
                     browse the room <br className="" />that we designed for you
                 </h3>
             </div>
